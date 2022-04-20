@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorApp.MainPage">
+
+    <Grid BackgroundColor="Black" ColumnSpacing="1" RowSpacing="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="Display" Grid.Row="0" Grid.ColumnSpan="4" BackgroundColor="Black" TextColor="White" Text="0" HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="70"/>
+        <Button Grid.Row="1" Grid.ColumnSpan="2" Text="C" BackgroundColor="Gray" BorderRadius="0" Clicked="Clear" FontSize="20"/>
+        <Button Grid.Row="1" Grid.Column="2" Text="DEL" BackgroundColor="Gray" BorderRadius="0" Clicked="Delete" FontSize="20"/>
+        <Button Grid.Row="1" Grid.Column="3" Text="/" BackgroundColor="Orange" BorderRadius="0" Clicked="Operation" FontSize="20" TextColor="White"/>
+        <Button Grid.Row="2" Grid.Column="0" Text="7" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="2" Grid.Column="1" Text="8" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="2" Grid.Column="2" Text="9" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="2" Grid.Column="3" Text="X" BackgroundColor="Orange" BorderRadius="0" Clicked="Operation" FontSize="20" TextColor="White"/>
+        <Button Grid.Row="3" Grid.Column="0" Text="4" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="3" Grid.Column="1" Text="5" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="3" Grid.Column="2" Text="6" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="3" Grid.Column="3" Text="-" BackgroundColor="Orange" BorderRadius="0" Clicked="Operation" FontSize="20" TextColor="White"/>
+        <Button Grid.Row="4" Grid.Column="0" Text="1" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="4" Grid.Column="1" Text="2" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="4" Grid.Column="2" Text="3" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="4" Grid.Column="3" Text="+" BackgroundColor="Orange" BorderRadius="0" Clicked="Operation" FontSize="20" TextColor="White"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Text="0" BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="5" Grid.Column="2" Text="." BackgroundColor="Gray" BorderRadius="0" Clicked="Number" FontSize="20"/>
+        <Button Grid.Row="5" Grid.Column="3" Text="=" BackgroundColor="Orange" BorderRadius="0" Clicked="Solve" FontSize="20" TextColor="White"/>
+    </Grid>
+
+</ContentPage>
