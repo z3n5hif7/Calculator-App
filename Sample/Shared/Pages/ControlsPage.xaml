@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.ControlsPage"
+             Title="ControlsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Try the Xamarin Forms Controls here.."
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Image x:Name="logo" Source="Logo" WidthRequest="320" Aspect="AspectFill">
+                <Image.GestureRecognizers>
+                    <PinchGestureRecognizer PinchUpdated="PinchGestureRecognizer_PinchUpdated"/>
+                    <PanGestureRecognizer PanUpdated="OnPanUpdated"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Image x:Name="logo2" Source="Logo" WidthRequest="320" Aspect="AspectFill">
+                <Image.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Left" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Right" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Up" Swiped="OnSwiped"/>
+                    <SwipeGestureRecognizer Direction="Down" Swiped="OnSwiped"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
